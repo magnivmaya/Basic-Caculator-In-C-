@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+int main()
+{
+
+    double num1, num2;
+    char op;
+    // input numbers, oprator from user
+
+    std::cout << "Enter Your First Number: ";
+    std::cin >> num1;
+
+    std::cout << "Choose an oprator(+, -, *, /, %):";
+    std::cin >> op;
+
+    std::cout << "Enter Your Second Number: ";
+    std::cin >> num2;
+
+    // if / else statments
+    if (op == '+')
+    {
+        std::cout << num1 + num2;
+    }
+    else if (op == '-')
+    {
+        std::cout << num1 - num2;
+    }
+    else if (op == '*')
+    {
+        std::cout << num1 * num2;
+    }
+    else if (op == '/')
+    {
+        std::cout << num1 / num2;
+    }
+    else if (op == '%')
+    {
+        std::cout << num1 - (num1 * num2) / num2;
+    }
+}
